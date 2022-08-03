@@ -20,7 +20,7 @@ var contractAddress = "0x918c8a467A68f309189c7A6EF05BEdcD5c96b330";
 var web3 = new Web3("http://localhost:9545");
 var helloWorld = new web3.eth.Contract(contractABI, contractAddress);
 
-document.addEventHandler("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
   helloWorld.methods
     .hello()
     .call()
